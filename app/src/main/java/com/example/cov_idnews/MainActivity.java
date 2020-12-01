@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, login_admin.class);
         startActivity(intent);
     }
+
+    public void news(View view) {
+        Intent intent = new Intent(MainActivity.this, NewsTab.class);
+        startActivity(intent);
+    }
 }

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDNews">
-        <activity android:name=".login_admin"></activity>
+        <activity android:name=".NewsTab"></activity>
+        <activity android:name=".login_admin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
