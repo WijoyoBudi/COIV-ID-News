@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">COV-ID News</string>
+    <string name="buttonAdmin">Button</string>
 </resources>

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".login_admin"
     android:background="#F1F1F6
 ">
@@ -41,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txUsername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -51,13 +55,15 @@
         android:background="@drawable/form"
         android:drawableStart="@drawable/useremail"
         android:drawableLeft="@drawable/useremail"
-        android:hint=" Email"
+        android:hint="Username"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -68,7 +74,9 @@
         android:background="@drawable/form"
         android:drawableStart="@drawable/userpassword"
         android:drawableLeft="@drawable/userpassword"
-        android:hint=" Password"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -93,8 +101,8 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -102,7 +110,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/form"
-        android:text="SIGN IN"
+        android:text="LOGIN"
         app:backgroundTint="@android:color/holo_red_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,4 +141,4 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="174dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
