@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:orientation="vertical"
+    android:background="#F1F1F6"
     android:gravity="center"
-    tools:context=".login_admin"
-    android:background="#F1F1F6
-">
+    android:orientation="vertical"
+    tools:context=".login_admin">
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:paddingBottom="8sp"
         android:text="Sign-In to continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,8 +55,8 @@
         android:drawableStart="@drawable/useremail"
         android:drawableLeft="@drawable/useremail"
         android:hint="Username"
-        android:textStyle="bold"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -68,18 +67,18 @@
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/form"
         android:drawableStart="@drawable/userpassword"
         android:drawableLeft="@drawable/userpassword"
         android:hint="Password"
-        android:textStyle="bold"
         android:inputType="textPassword"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/txUsername" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -92,13 +91,15 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginRight="16dp"
+        android:gravity="center|right"
         android:text="Forgot Password?"
         android:textColor="@android:color/holo_red_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txPassword" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -106,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/form"
@@ -125,14 +126,7 @@
         android:textColor="@android:color/holo_red_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -141,4 +135,11 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="174dp" />
 
-</LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

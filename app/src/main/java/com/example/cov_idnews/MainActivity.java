@@ -38,4 +38,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, NewsTab.class);
         startActivity(intent);
     }
+
+    public void hospital(View view) {
+        Intent intent = new Intent(MainActivity.this, HospitalTab.class);
+        startActivity(intent);
+    }
+
+    public void our_team(View view) {
+        Intent intent = new Intent(MainActivity.this, OurTeam.class);
+        startActivity(intent);
+    }
 }
