@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.cov_idnews.R;
+
 public class FragmentScience extends Fragment {
 
     public FragmentScience() {
