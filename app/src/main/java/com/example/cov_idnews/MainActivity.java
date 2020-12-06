@@ -5,9 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final DrawerLayout drawerLayout = findViewById(R.id.DrawerLayoutt);
+
+         findViewById(R.id.ImageNavigation).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 drawerLayout.openDrawer(GravityCompat.START);
+             }
+         });
+        NavigationView navigationView = findViewById(R.id.NavigationView);
+        navigationView.setItemIconTintList(null);
 
         ImageSlider imageSlider = findViewById(R.id.slider);
 
@@ -48,4 +61,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, OurTeam.class);
         startActivity(intent);
     }
+
 }
