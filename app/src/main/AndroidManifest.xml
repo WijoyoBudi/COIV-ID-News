@@ -16,6 +16,9 @@
         <activity android:name=".OurTeam" />
         <activity android:name=".halaman_admin" />
         <activity android:name=".NewsTab" />
+        <activity android:name=".rumahsakit.CreateActivity"></activity>
+        <activity android:name=".rumahsakit.UpdateActivity"/>
+        <activity android:name=".rumahsakit.ListActivity"/>
         <activity android:name=".login_admin" />
         <activity android:name=".MainActivity">
             <intent-filter>
