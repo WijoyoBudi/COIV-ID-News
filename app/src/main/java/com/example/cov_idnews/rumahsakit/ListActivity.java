@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.rumahsakit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class HospitalTab extends AppCompatActivity implements View.OnClickListener{
+public class ListActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ListView listView;
 //    private Button btnAdd;
@@ -49,7 +49,7 @@ public class HospitalTab extends AppCompatActivity implements View.OnClickListen
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(HospitalTab.this, UpdateActivity.class);
+                Intent intent = new Intent(ListActivity.this, UpdateActivity.class);
                 intent.putExtra(UpdateActivity.EXTRA_RUMAHSAKIT, rumahsakitList.get(i));
 
                 startActivity(intent);
@@ -80,14 +80,14 @@ public class HospitalTab extends AppCompatActivity implements View.OnClickListen
                     rumahsakitList.add(rumahSakit);
                 }
 
-                RumahSakitAdapter adapter = new RumahSakitAdapter(HospitalTab.this);
+                RumahSakitAdapter adapter = new RumahSakitAdapter(ListActivity.this);
                 adapter.setRumahSakitList(rumahsakitList);
                 listView.setAdapter(adapter);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(HospitalTab.this, "Terjadi kesalahan.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListActivity.this, "Terjadi kesalahan.", Toast.LENGTH_SHORT).show();
             }
         });
     }
