@@ -147,7 +147,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/navigation_menu" />
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/layout_navigation_header"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

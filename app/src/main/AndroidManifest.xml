@@ -11,19 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDNews">
-        <activity android:name=".AddNews"></activity>
+        <activity android:name=".AddNews" />
         <activity android:name=".HospitalTab" />
         <activity android:name=".OurTeam" />
         <activity android:name=".halaman_admin" />
         <activity android:name=".NewsTab" />
         <activity android:name=".login_admin" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
