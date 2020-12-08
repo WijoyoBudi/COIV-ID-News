@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDNews">
+        <activity android:name=".HelpTab"></activity>
         <activity android:name=".AddNews" />
         <activity android:name=".HospitalTab" />
         <activity android:name=".OurTeam" />
         <activity android:name=".halaman_admin" />
         <activity android:name=".NewsTab" />
-        <activity android:name=".rumahsakit.CreateActivity"></activity>
-        <activity android:name=".rumahsakit.UpdateActivity"/>
-        <activity android:name=".rumahsakit.ListActivity"/>
+        <activity android:name=".rumahsakit.CreateActivity" />
+        <activity android:name=".rumahsakit.UpdateActivity" />
+        <activity android:name=".rumahsakit.ListActivity" />
         <activity android:name=".login_admin" />
         <activity android:name=".LandingPage">
             <intent-filter>
@@ -27,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

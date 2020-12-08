@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,38 +29,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="Our Team"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="43dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="45dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/abc_vector_test" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -78,25 +54,22 @@
             android:layout_height="match_parent"
             android:src="@drawable/adminperson" />
 
+
         <TextView
-            android:id="@+id/TVyudi"
+            android:id="@+id/TY"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="193dp"
-            android:layout_marginRight="193dp"
             android:layout_toRightOf="@id/team1"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
+            android:text="Yudi Febrianto"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Yudi Febrianto" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/TVyudi"
+            android:layout_below="@+id/TY"
             android:layout_toRightOf="@id/team1"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
@@ -123,20 +96,20 @@
             android:src="@drawable/adminperson" />
 
         <TextView
-            android:id="@+id/TVreza"
+            android:id="@+id/TR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/team2"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
+            android:text="Reza Cahya Nugraha"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Reza Cahya Nugraha" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/TVreza"
+            android:layout_below="@id/TR"
             android:layout_toRightOf="@id/team2"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
@@ -163,20 +136,20 @@
             android:src="@drawable/adminperson" />
 
         <TextView
-            android:id="@+id/TVzufar"
+            android:id="@+id/TZU"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/team3"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
+            android:text="Zufar Abyan Handito"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="Zufar Abyan Handito" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/TVzufar"
+            android:layout_below="@id/TZU"
             android:layout_toRightOf="@id/team3"
             android:paddingLeft="16dp"
             android:paddingTop="8dp"
@@ -212,7 +185,7 @@
             android:paddingTop="8dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Zenta Hapsari Elfariani" />
+            android:text="Zenta Hapsari Elfariani" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -252,7 +225,7 @@
             android:paddingTop="8dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Wijoyo Budi Prasetyo" />
+            android:text="Wijoyo Budi Prasetyo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -291,7 +264,7 @@
             android:paddingTop="8dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Rizky Achmad Almayda" />
+            android:text="Rizky Achmad Almayda" />
 
         <TextView
             android:layout_width="wrap_content"

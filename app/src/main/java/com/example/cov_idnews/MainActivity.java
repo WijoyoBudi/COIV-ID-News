@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void help(View view) {
-        Intent intent = new Intent(MainActivity.this, login_admin.class);
+        Intent intent = new Intent(MainActivity.this, HelpTab.class);
         startActivity(intent);
     }
 
