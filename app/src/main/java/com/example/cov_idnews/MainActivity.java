@@ -10,6 +10,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.cov_idnews.admin.login_admin;
+import com.example.cov_idnews.berita.NewsTab;
+import com.example.cov_idnews.rumahsakit.HospitalTab;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;

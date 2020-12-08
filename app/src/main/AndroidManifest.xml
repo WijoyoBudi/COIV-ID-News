@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDNews">
-        <activity android:name=".AddNews"></activity>
-        <activity android:name=".HospitalTab" />
+        <activity android:name=".berita.AddNews"></activity>
+        <activity android:name=".rumahsakit.HospitalTab" />
         <activity android:name=".OurTeam" />
-        <activity android:name=".halaman_admin" />
-        <activity android:name=".NewsTab" />
+        <activity android:name=".admin.halaman_admin" />
+        <activity android:name=".berita.NewsTab" />
         <activity android:name=".rumahsakit.CreateActivity"></activity>
         <activity android:name=".rumahsakit.UpdateActivity"/>
         <activity android:name=".rumahsakit.ListActivity"/>
-        <activity android:name=".login_admin" />
+        <activity android:name=".admin.login_admin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

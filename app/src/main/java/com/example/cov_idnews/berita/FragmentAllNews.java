@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.berita;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,16 @@ import androidx.fragment.app.Fragment;
 
 import com.example.cov_idnews.R;
 
-public class FragmentCase extends Fragment {
+public class FragmentAllNews extends Fragment {
 
-    public FragmentCase() {
+    public FragmentAllNews() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_case, container, false);
+        return inflater.inflate(R.layout.fragment_all_news, container, false);
     }
 }

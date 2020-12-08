@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.cov_idnews.MainActivity;
+import com.example.cov_idnews.R;
+import com.example.cov_idnews.berita.AddNews;
 import com.example.cov_idnews.rumahsakit.CreateActivity;
 
 public class halaman_admin extends AppCompatActivity {

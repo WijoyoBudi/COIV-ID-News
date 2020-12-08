@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.admin;
 
 import android.content.ContentValues;
 import android.content.Context;

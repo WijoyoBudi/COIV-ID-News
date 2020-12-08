@@ -1,10 +1,12 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.berita;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.cov_idnews.R;
+import com.example.cov_idnews.berita.PagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class NewsTab extends AppCompatActivity {

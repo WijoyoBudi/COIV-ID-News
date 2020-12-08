@@ -1,9 +1,14 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.berita;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+
+import com.example.cov_idnews.berita.FragmentAllNews;
+import com.example.cov_idnews.berita.FragmentCase;
+import com.example.cov_idnews.berita.FragmentEconomy;
+import com.example.cov_idnews.berita.FragmentScience;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 

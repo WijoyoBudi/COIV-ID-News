@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.berita;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+
+import com.example.cov_idnews.R;
 
 public class AddNews extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.cov_idnews;
+package com.example.cov_idnews.rumahsakit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,12 +7,10 @@ import android.content.Intent;
 import com.example.cov_idnews.R;
 import com.example.cov_idnews.adapter.RumahSakitAdapter;
 import com.example.cov_idnews.model.RumahSakit;
-import com.example.cov_idnews.rumahsakit.CreateActivity;
-import com.example.cov_idnews.rumahsakit.UpdateActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
