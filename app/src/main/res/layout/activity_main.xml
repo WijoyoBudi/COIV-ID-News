@@ -46,7 +46,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:srcCompat="@drawable/cov_news"
-        tools:ignore="MissingConstraints"
         android:onClick="news"/>
 
     <ImageView
@@ -59,7 +58,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:srcCompat="@drawable/cov_hospital"
-        tools:ignore="MissingConstraints"
         android:onClick="hospital"/>
 
     <ImageView
@@ -72,7 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/cov_team"
-        tools:ignore="MissingConstraints"
         android:onClick="our_team"/>
 
     <ImageView
@@ -85,7 +82,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/cov_help"
-        tools:ignore="MissingConstraints"
         android:onClick="help"/>
 
     <androidx.constraintlayout.widget.Guideline

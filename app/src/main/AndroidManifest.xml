@@ -12,15 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COVIDNews">
         <activity android:name=".HelpTab"></activity>
-        <activity android:name=".AddNews" />
-        <activity android:name=".HospitalTab" />
+        <activity android:name=".berita.NewsTab" />
+        <activity android:name=".rumahsakit.HospitalTab" />
         <activity android:name=".OurTeam" />
-        <activity android:name=".halaman_admin" />
-        <activity android:name=".NewsTab" />
+        <activity android:name=".admin.halaman_admin" />
         <activity android:name=".rumahsakit.CreateActivity" />
         <activity android:name=".rumahsakit.UpdateActivity" />
         <activity android:name=".rumahsakit.ListActivity" />
-        <activity android:name=".login_admin" />
+        <activity android:name=".admin.login_admin" />
         <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

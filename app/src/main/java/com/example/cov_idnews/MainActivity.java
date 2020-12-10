@@ -17,6 +17,7 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.cov_idnews.admin.login_admin;
 import com.example.cov_idnews.berita.NewsTab;
 import com.example.cov_idnews.rumahsakit.HospitalTab;
+import com.example.cov_idnews.admin.halaman_admin;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -44,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
+    public void our_team(View view) {
+        Intent intent = new Intent(MainActivity.this, OurTeam.class);
+        startActivity(intent);
+    }
+
+
     public void news(View view) {
         Intent intent = new Intent(MainActivity.this, NewsTab.class);
         startActivity(intent);
@@ -53,12 +62,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, HospitalTab.class);
         startActivity(intent);
     }
-
-    public void our_team(View view) {
-        Intent intent = new Intent(MainActivity.this, OurTeam.class);
-        startActivity(intent);
-    }
-
 
     public void loginAdmin(View view) {
         Intent intent = new Intent(MainActivity.this, login_admin.class);

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F1F1F6"
+    tools:context=".berita.NewsTab"
     android:scrollbarThumbHorizontal="@drawable/_centerdesainnn">
 
 
