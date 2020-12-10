@@ -36,7 +36,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_tab);
+        setContentView(R.layout.activity_list_hospital_admin);
 
         dbRumahsakit = FirebaseDatabase.getInstance().getReference("rumahsakit");
 
