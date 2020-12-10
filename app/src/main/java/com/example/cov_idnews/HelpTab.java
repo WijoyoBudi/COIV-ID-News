@@ -1,14 +1,14 @@
 package com.example.cov_idnews;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Help extends AppCompatActivity {
+import android.os.Bundle;
+
+public class HelpTab extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
+        setContentView(R.layout.activity_help_tab);
     }
 }

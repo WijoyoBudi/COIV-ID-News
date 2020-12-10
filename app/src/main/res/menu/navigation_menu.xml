@@ -10,7 +10,7 @@
         android:title="@string/bookmarks"/>
 
     <item
-        android:id="@+id/TabLogIn"
-        android:title="@string/login"/>
+        android:id="@+id/LogOut"
+        android:title="@string/logout"/>
 
 </menu>
