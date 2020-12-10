@@ -9,41 +9,39 @@
     tools:context=".berita.AddNews">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/judul"
         android:layout_width="95dp"
         android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="Title"
+        android:text="Judul"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/penulis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="Penulis"
+        android:text="Penulis/Sumber"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline8"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline8"/>
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/isiBerita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:text="Description"
+        android:text="Isi Berita"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline7"/>
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -86,9 +84,10 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6">
+        app:layout_constraintTop_toBottomOf="@+id/judul">
 
         <EditText
+            android:id="@+id/edtJudul"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/form" />
@@ -104,9 +103,10 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintTop_toBottomOf="@+id/penulis">
 
         <EditText
+            android:id="@+id/edtPenulis"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/form" />
@@ -123,10 +123,10 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toBottomOf="@+id/isiBerita">
 
         <EditText
-            android:id="@+id/editTextTextMultiLine2"
+            android:id="@+id/edtIsiBerita"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -137,7 +137,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/BCategory"
+        android:id="@+id/btnPilihKategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -154,7 +154,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSaveBerita"
         android:layout_width="137dp"
         android:layout_height="56dp"
         android:text="SIMPAN"

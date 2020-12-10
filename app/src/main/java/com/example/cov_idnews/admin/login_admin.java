@@ -16,7 +16,7 @@ public class login_admin extends AppCompatActivity {
 
     EditText TxUsername, TxPassword;
     Button BtnLogin;
-    DBCovid dbCovid;
+    db_admin dbCovid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class login_admin extends AppCompatActivity {
         TxPassword = (EditText)findViewById(R.id.txPassword);
         BtnLogin = (Button)findViewById(R.id.btnLogin);
 
-        dbCovid = new DBCovid(this);
+        dbCovid = new db_admin(this);
 
         BtnLogin.setOnClickListener(v -> {
             String username = TxUsername.getText().toString().trim();

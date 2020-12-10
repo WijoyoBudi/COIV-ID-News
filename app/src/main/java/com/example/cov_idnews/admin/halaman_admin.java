@@ -18,6 +18,7 @@ import com.example.cov_idnews.MainActivity;
 import com.example.cov_idnews.R;
 import com.example.cov_idnews.berita.AddNews;
 import com.example.cov_idnews.rumahsakit.CreateActivity;
+import com.example.cov_idnews.rumahsakit.ListActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class halaman_admin extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -79,7 +80,7 @@ public class halaman_admin extends AppCompatActivity implements NavigationView.O
     }
 
     public void TambahRumahSakit(View view) {
-        Intent intent = new Intent(halaman_admin.this, CreateActivity.class);
+        Intent intent = new Intent(halaman_admin.this, ListActivity.class);
         startActivity(intent);
     }
 

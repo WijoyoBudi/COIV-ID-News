@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class DBCovid extends SQLiteOpenHelper {
+public class db_admin extends SQLiteOpenHelper {
 
     public static final String database_name = "db_login";
     public static final String table_name = "table_login";
@@ -19,7 +19,7 @@ public class DBCovid extends SQLiteOpenHelper {
 
     private SQLiteDatabase db;
 
-    public DBCovid(Context context) {
+    public db_admin(Context context) {
         super(context, database_name, null, 2);
         db = getWritableDatabase();
     }

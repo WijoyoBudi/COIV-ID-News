@@ -39,6 +39,14 @@ public class Berita implements Parcelable {
         this.isiBerita = isiBerita;
     }
 
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
+    }
+
 //    public byte[] getImage() {
 //        return image;
 //    }
@@ -85,5 +93,7 @@ public class Berita implements Parcelable {
             return new Berita[size];
         }
     };
+
+
 }
 

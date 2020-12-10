@@ -27,7 +27,7 @@ import java.util.ArrayList;
 public class ListActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ListView listView;
-//    private Button btnAdd;
+    private Button btnAdd;
 
     private RumahSakitAdapter adapter;
     private ArrayList<RumahSakit> rumahsakitList;
@@ -41,8 +41,8 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
         dbRumahsakit = FirebaseDatabase.getInstance().getReference("rumahsakit");
 
         listView = findViewById(R.id.lvList);
-//        btnAdd = findViewById(R.id.btnAdd);
-//        btnAdd.setOnClickListener(this);
+        btnAdd = findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(this);
 
         rumahsakitList = new ArrayList<>();
 
@@ -59,10 +59,10 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-//        if (v.getId() == R.id.btnAdd) {
-//            Intent intent = new Intent(ListActivity.this, CreateActivity.class);
-//            startActivity(intent);
-//        }
+        if (v.getId() == R.id.btnAdd) {
+            Intent intent = new Intent(ListActivity.this, CreateActivity.class);
+            startActivity(intent);
+        }
     }
 
 
