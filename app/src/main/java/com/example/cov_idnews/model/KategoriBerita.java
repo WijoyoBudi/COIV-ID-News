@@ -1,17 +1,16 @@
 package com.example.cov_idnews.model;
 
-import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class RumahSakit implements Parcelable {
+public class KategoriBerita implements Parcelable {
     private String id;
-    private String nama;
-    private String alamat;
-    private String kontak;
+    private String kasus;
+    private String penanganan;
+    private String teknologi;
 //    private byte[] image;
 
-    public RumahSakit() {
+    public KategoriBerita() {
     }
 
     public String getId() {
@@ -22,20 +21,20 @@ public class RumahSakit implements Parcelable {
         this.id = id;
     }
 
-    public String getNama() {
-        return nama;
+    public String getKasus() {
+        return kasus;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setKasus(String kasus) {
+        this.kasus = kasus;
     }
 
-    public String getAlamat() {
-        return alamat;
+    public String getPenanganan() {
+        return penanganan;
     }
 
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
+    public void setPenanganan(String penanganan) {
+        this.penanganan = penanganan;
     }
 
 //    public byte[] getImage() {
@@ -58,30 +57,30 @@ public class RumahSakit implements Parcelable {
 //            dest.writeByteArray(image);
 //        }
         dest.writeString(this.id);
-        dest.writeString(this.nama);
-        dest.writeString(this.alamat);
+        dest.writeString(this.kasus);
+        dest.writeString(this.penanganan);
     }
 
 
-    protected RumahSakit(Parcel in) {
+    protected KategoriBerita(Parcel in) {
         this.id = in.readString();
-        this.nama = in.readString();
-        this.alamat = in.readString();
+        this.kasus = in.readString();
+        this.penanganan = in.readString();
 //        image = new byte[in.readInt()];
 //        in.readByteArray(image); // this will read the byte array from Parcel object(in) and store the value in mImage member variable.
 //        id = in.readString();
 
     }
 
-    public static final Parcelable.Creator<RumahSakit> CREATOR = new Parcelable.Creator<RumahSakit>() {
+    public static final Parcelable.Creator<KategoriBerita> CREATOR = new Parcelable.Creator<KategoriBerita>() {
         @Override
-        public RumahSakit createFromParcel(Parcel source) {
-            return new RumahSakit(source);
+        public KategoriBerita createFromParcel(Parcel source) {
+            return new KategoriBerita(source);
         }
 
         @Override
-        public RumahSakit[] newArray(int size) {
-            return new RumahSakit[size];
+        public KategoriBerita[] newArray(int size) {
+            return new KategoriBerita[size];
         }
     };
 }
