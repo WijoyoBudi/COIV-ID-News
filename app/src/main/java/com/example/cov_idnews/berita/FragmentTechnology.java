@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.cov_idnews.R;
 
-public class FragmentEconomy extends Fragment {
+public class FragmentTechnology extends Fragment {
 
-    public FragmentEconomy() {
+    public FragmentTechnology() {
         // Required empty public constructor
     }
 
@@ -19,6 +19,6 @@ public class FragmentEconomy extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_economy, container, false);
+        return inflater.inflate(R.layout.fragment_technology, container, false);
     }
 }

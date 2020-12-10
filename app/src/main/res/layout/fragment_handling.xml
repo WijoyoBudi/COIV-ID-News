@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".berita.FragmentEconomy">
+    tools:context=".berita.FragmentHandling">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Tab Economy"/>
+        android:text="Tab Penanganan"/>
 
 </RelativeLayout>

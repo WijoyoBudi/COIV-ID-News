@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.cov_idnews.R;
 
-public class FragmentScience extends Fragment {
+public class FragmentHandling extends Fragment {
 
-    public FragmentScience() {
+    public FragmentHandling() {
         // Required empty public constructor
     }
 
@@ -19,6 +19,6 @@ public class FragmentScience extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_science, container, false);
+        return inflater.inflate(R.layout.fragment_handling, container, false);
     }
 }

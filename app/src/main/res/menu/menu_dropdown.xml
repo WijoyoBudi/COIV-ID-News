@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/dropdown_menu1"
-        android:title="Case"/>
+        android:title="Kasus"/>
     <item
         android:id="@+id/dropdown_menu2"
-        android:title="Economy"/>
+        android:title="Penanganan"/>
     <item
         android:id="@+id/dropdown_menu3"
-        android:title="Science"/>
+        android:title="Teknologi"/>
 
 </menu>
