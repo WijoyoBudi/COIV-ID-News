@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class UpdateActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText edtNama, edtAlamat;
-    private Button btnUpdate;
+    private Button btnUpdate,btnDelete;
 
     public static final String EXTRA_RUMAHSAKIT = "extra_rumahsakit";
     public final int ALERT_DIALOG_CLOSE = 10;
@@ -43,6 +43,8 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
         edtAlamat = findViewById(R.id.edtEditAlamat);
         btnUpdate = findViewById(R.id.btnUpdate);
         btnUpdate.setOnClickListener(this);
+        btnDelete = findViewById(R.id.btnDelete);
+        btnDelete.setOnClickListener(this);
 
         rumahsakit = getIntent().getParcelableExtra(EXTRA_RUMAHSAKIT);
 
@@ -67,6 +69,9 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         if (v.getId() == R.id.btnUpdate) {
             updateRumahSakit();
+        }
+        if (v.getId() == R.id.btnDelete) {
+            deleteRumahSakit();
         }
     }
 
@@ -102,6 +107,18 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+    public void deleteRumahSakit(){
+        DatabaseReference dbRumahsakit =
+                mDatabase.child("rumahsakit").child(rumahsakitId);
+
+        dbRumahsakit.removeValue();
+
+        Toast.makeText(UpdateActivity.this, "Deleting data...",
+                Toast.LENGTH_SHORT).show();
+
+        finish();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_form, menu);
@@ -125,6 +142,8 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     //HAPUS DATA
+
+
     @Override
     public void onBackPressed() {
         showAlertDialog(ALERT_DIALOG_CLOSE);
@@ -148,6 +167,7 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
         alertDialogBuilder.setMessage(dialogMessage)
                 .setCancelable(false)
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 

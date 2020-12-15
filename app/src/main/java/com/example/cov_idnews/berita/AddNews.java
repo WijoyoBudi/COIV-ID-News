@@ -27,11 +27,6 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
     private EditText edtJudul, edtIsiBerita,edtPenulis;
 
     private Button btnPilihKategori,btnSaveBerita;
-    private ImageView imageView;
-
-    private Uri filePath;
-
-    private final int PICK_IMAGE_REQUEST = 71;
 
     private Berita berita;
 
@@ -47,7 +42,6 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
         edtJudul = findViewById(R.id.edtJudul);
         edtIsiBerita = findViewById(R.id.edtIsiBerita);
         edtIsiBerita = findViewById(R.id.edtPenulis);
-//        imageView = findViewById(R.id.imageView);
         btnPilihKategori = findViewById(R.id.btnPilihKategori);
         btnPilihKategori.setOnClickListener(this);
         btnSaveBerita = findViewById(R.id.btnSaveBerita);
@@ -64,10 +58,7 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
             saveBerita();
         }
 
-        if (view.getId() == R.id.btnListViewRS) {
-            Intent intent = new Intent(com.example.cov_idnews.berita.AddNews.this, ListActivity.class);
-            startActivity(intent);
-        }
+
 
 
     }
@@ -111,7 +102,7 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
-    public void ListRumahsakit(View view) {
+    public void ListBerita(View view) {
         Intent intent = new Intent(com.example.cov_idnews.berita.AddNews.this, ListActivity.class);
         startActivity(intent);
     }

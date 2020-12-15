@@ -47,6 +47,14 @@ public class Berita implements Parcelable {
         this.tanggal = tanggal;
     }
 
+    public String getIdKategori() {
+        return idKategori;
+    }
+
+    public void setIdKategori(String idKategori) {
+        this.idKategori = idKategori;
+    }
+
 //    public byte[] getImage() {
 //        return image;
 //    }
@@ -93,6 +101,7 @@ public class Berita implements Parcelable {
             return new Berita[size];
         }
     };
+
 
 
 }
