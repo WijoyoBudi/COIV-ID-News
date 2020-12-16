@@ -4,8 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+
+import com.example.cov_idnews.MainActivity;
 import com.example.cov_idnews.R;
 import com.example.cov_idnews.adapter.RumahSakitAdapter;
+import com.example.cov_idnews.berita.NewsTab;
 import com.example.cov_idnews.model.RumahSakit;
 
 import android.os.Bundle;
@@ -88,7 +91,13 @@ public class HospitalTab extends AppCompatActivity implements View.OnClickListen
                 Toast.makeText(HospitalTab.this, "Terjadi kesalahan.", Toast.LENGTH_SHORT).show();
             }
         });
+
+
     }
 
 
+    public void clikback(View view) {
+            Intent intent = new Intent(HospitalTab.this, MainActivity.class);
+            startActivity(intent);
+    }
 }

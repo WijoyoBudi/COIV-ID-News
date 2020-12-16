@@ -1,10 +1,14 @@
 package com.example.cov_idnews.berita;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.cov_idnews.HelpTab;
+import com.example.cov_idnews.MainActivity;
 import com.example.cov_idnews.R;
 import com.example.cov_idnews.berita.PagerAdapter;
 import com.google.android.material.tabs.TabLayout;
@@ -43,5 +47,10 @@ public class NewsTab extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void coba(View view) {
+        Intent intent = new Intent(NewsTab.this, MainActivity.class);
+        startActivity(intent);
     }
 }
