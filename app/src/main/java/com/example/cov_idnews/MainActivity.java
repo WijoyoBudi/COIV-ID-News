@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.terpaparcovid, "Image 1"));
-        slideModels.add(new SlideModel(R.drawable.simulasipemilihan, "Image 2"));
-        slideModels.add(new SlideModel(R.drawable.vaksin, "Image 3"));
-        slideModels.add(new SlideModel(R.drawable.coviddeath, "Image 4"));
+        slideModels.add(new SlideModel(R.drawable.terpaparcovid, "Jumlah Kasus COVID-19 di Indonesia"));
+        slideModels.add(new SlideModel(R.drawable.simulasipemilihan, "Simulasi Pemilihan 2020"));
+        slideModels.add(new SlideModel(R.drawable.vaksin, "Masalah Vaksin  Untuk Corona"));
+        slideModels.add(new SlideModel(R.drawable.coviddeath, "Kasus Terpapar dan Kasus Kematian COVID-19 di Asia Tenggara"));
         imageSlider.setImageList(slideModels, true);
     }
 

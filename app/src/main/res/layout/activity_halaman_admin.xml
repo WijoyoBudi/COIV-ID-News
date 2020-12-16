@@ -26,37 +26,38 @@
 
         <Button
             android:id="@+id/btnExit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:text="LogOut"
+            app:backgroundTint="@android:color/holo_red_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/AddNews"
+            android:layout_width="181dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="212dp"
+            android:onClick="TambahBerita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cov_news" />
+
+        <ImageView
+            android:id="@+id/AddHospital"
+            android:layout_width="186dp"
+            android:layout_height="131dp"
+            android:onClick="TambahRumahSakit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/AddNews"
-        android:layout_width="181dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="212dp"
-        android:onClick="TambahBerita"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cov_news" />
-
-    <ImageView
-        android:id="@+id/AddHospital"
-        android:layout_width="186dp"
-        android:layout_height="131dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AddNews"
-        app:layout_constraintVertical_bias="0.117"
-        app:srcCompat="@drawable/cov_hospital"
-        android:onClick="TambahRumahSakit"
-        />
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddNews"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/cov_hospital" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
