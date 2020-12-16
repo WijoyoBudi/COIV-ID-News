@@ -13,6 +13,7 @@
         android:theme="@style/Theme.COVIDNews">
         <activity android:name=".HelpTab"></activity>
         <activity android:name=".berita.NewsTab" />
+        <activity android:name=".berita.CreateActivity" />
         <activity android:name=".rumahsakit.HospitalTab" />
         <activity android:name=".OurTeam" />
         <activity android:name=".admin.halaman_admin" />

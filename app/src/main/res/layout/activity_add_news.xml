@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F1F1F6"
-    tools:context=".berita.AddNews">
+    tools:context=".berita.CreateActivity">
 
     <TextView
         android:id="@+id/judul"
