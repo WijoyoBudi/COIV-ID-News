@@ -47,15 +47,15 @@ public class HospitalTab extends AppCompatActivity implements View.OnClickListen
 
         rumahsakitList = new ArrayList<>();
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //                Intent intent = new Intent(HospitalTab.this, UpdateActivity.class);
 //                intent.putExtra(UpdateActivity.EXTRA_RUMAHSAKIT, rumahsakitList.get(i));
 //
 //                startActivity(intent);
-            }
-        });
+//            }
+//        });
     }
 
     @Override

@@ -41,7 +41,7 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
 
         edtJudul = findViewById(R.id.edtJudul);
         edtIsiBerita = findViewById(R.id.edtIsiBerita);
-        edtIsiBerita = findViewById(R.id.edtPenulis);
+        edtPenulis = findViewById(R.id.edtPenulis);
         btnPilihKategori = findViewById(R.id.btnPilihKategori);
         btnPilihKategori.setOnClickListener(this);
         btnSaveBerita = findViewById(R.id.btnSaveBerita);
@@ -68,6 +68,7 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
     private void saveBerita()
     {
         String judul = edtJudul.getText().toString().trim();
+        String penulis = edtPenulis.getText().toString().trim();
         String isiBerita = edtIsiBerita.getText().toString().trim();
 
 
@@ -77,11 +78,17 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
             isEmptyFields = true;
             edtJudul.setError("Field ini tidak boleh kosong");
         }
+        if (TextUtils.isEmpty(isiBerita)) {
+            isEmptyFields = true;
+            edtPenulis.setError("Field ini tidak boleh kosong");
+        }
+
 
         if (TextUtils.isEmpty(isiBerita)) {
             isEmptyFields = true;
             edtIsiBerita.setError("Field ini tidak boleh kosong");
         }
+
 
         if (! isEmptyFields) {
 
@@ -92,6 +99,7 @@ public class AddNews extends AppCompatActivity implements View.OnClickListener{
             String id = dbBerita.push().getKey();
             berita.setId(id);
             berita.setJudul(judul);
+            berita.setJudul(penulis);
             berita.setIsiBerita(isiBerita);
 
             //insert data

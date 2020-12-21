@@ -6,6 +6,7 @@ import android.os.Parcelable;
 public class Berita implements Parcelable {
     private String id;
     private String judul;
+    private String penulis;
     private String isiBerita;
     private String tanggal;
     private String idKategori;
